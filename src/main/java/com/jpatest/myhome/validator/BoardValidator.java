@@ -15,8 +15,8 @@ public class BoardValidator implements Validator {
 
     @Override
     public void validate(Object obj, Errors errors){
-        Board bd = (Board) obj;
-        if(StringUtils.isEmpty(bd.getContent)){
+        Board b = (Board) obj;
+        if(StringUtils.isEmpty(b.getContent())){
             errors.rejectValue("content", "key", "내용을 입력하세요");
         }
     }

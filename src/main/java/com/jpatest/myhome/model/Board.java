@@ -1,8 +1,6 @@
 package com.jpatest.myhome.model;
 
-
 import lombok.Data;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -20,6 +18,4 @@ public class Board {
     @Size(min=2, max=30, message = "제목은 2자 이상 30자 이하입니다.")
     private String title;
     private String content;
-
-
 }
